@@ -1,23 +1,23 @@
 {
-  "name": "crud-livros-rel-mpago",
+  "name": "2026-2sem-itapevi-ds3n-crud-livros-relampago",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-     "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vinicius1007/CRUD-livros-rel-mpago.git"
+    "url": "git+https://github.com/Joao-Meyer/2026-2sem-itapevi-ds3n-crud-livros-relampago.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/vinicius1007/CRUD-livros-rel-mpago/issues"
+    "url": "https://github.com/Joao-Meyer/2026-2sem-itapevi-ds3n-crud-livros-relampago/issues"
   },
-  "homepage": "https://github.com/vinicius1007/CRUD-livros-rel-mpago#readme",
+  "homepage": "https://github.com/Joao-Meyer/2026-2sem-itapevi-ds3n-crud-livros-relampago#readme",
   "dependencies": {
     "express": "^5.2.1"
   },

@@ -1,21 +1,21 @@
-const books = require("../data/books")
+const booksList = require("../data/books")
 
 const findAll = () => {
-    return books
+    return booksList
 }
 
 const create = (book) => {
-    books.push(book)
+    booksList.push(book)
 
     return book
 }
 
 const findById = (id) => {
-    return books.find( book => book.id === id )
+    return booksList.find( book => book.id === id )
 }
 
 const update = (id, data) => {
-    const book = books.find( book => book.id === id )
+    const book = booksList.find( book => book.id === id )
 
     if (!book) return null
 
@@ -23,29 +23,29 @@ const update = (id, data) => {
         book.title = data.title
     }
 
-      if(data.author){
+    if(data.author){
         book.author = data.author
     }
 
     return book
 }
 
-// const remove = (id) => {
-//     const index = books.findIndex( user => user.id === id )
+const remove = (id) => {
+    const index = booksList.findIndex( book => book.id === id )
 
-//     if (index === -1) return null
+    if (index === -1) return null
 
-//     const deletedUser = books[index]
+    const deletedBook = booksList[index]
 
-//     books.splice(index, 1)
+    booksList.splice(index, 1)
 
-//     return deletedUser
-// }
+    return deletedBook
+}
 
 module.exports = {
     findAll,
     create,
     findById,
     update,
-    // remove
+    remove
 }

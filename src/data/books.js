@@ -1,6 +1,6 @@
 const books = [
     {
-        "id": 1,
+        id: 1,
         "title": "Clean Code",
         "author": "Robert C. Martin"
     }

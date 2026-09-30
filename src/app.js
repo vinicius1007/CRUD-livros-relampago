@@ -1,16 +1,16 @@
 const express = require("express")
-//const userRoutes = require("./routes/userRoutes")
+const bookRoutes = require("./routes/bookRoutes")
 
 const app = express()
 
 app.use(express.json())
 
 function callbackDaRaiz( request, response ) {
-    response.send("TRICOLOR!!!!")
+    response.send("VAI CORINTHIANS!!!! 🦅")
 }
 
 app.get("/", callbackDaRaiz)
 
-//app.use("/users", userRoutes)
+app.use("/books", bookRoutes)
 
 module.exports = app
